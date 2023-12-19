@@ -73,13 +73,13 @@ pipeline {
                 }
             }
         }
-        // stage('destroy') {
-        //     steps {
-        //         script {
-        //             sh 'terraform destroy -auto-approve'
-        //         }
-        //     }
-        // }
+        stage('destroy') {
+            steps {
+                script {
+                    sh 'terraform destroy -auto-approve'
+                }
+            }
+        }
     }
 
 
