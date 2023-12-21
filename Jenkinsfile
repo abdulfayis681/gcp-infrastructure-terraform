@@ -66,13 +66,13 @@ pipeline {
             }
         }
 
-        stage('Apply') {
-            steps {
-                script {
-                    sh 'terraform apply -auto-approve'
-                }
-            }
-        }
+        // stage('Apply') {
+        //     steps {
+        //         script {
+        //             sh 'terraform apply -auto-approve'
+        //         }
+        //     }
+        // }
         stage('destroy') {
             steps {
                 script {
